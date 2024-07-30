@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.caixa {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    width: 700px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.conteudo-abas {
+    position: relative;
+    height: 300px; 
+    overflow: hidden;
+}
+
+.aba-conteudo {
+    position: absolute;
+    bottom: -80%;
+    height: -400px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+}
+
+.aba-conteudo.ativa {
+    bottom: 0;
+    opacity: 1;
+}
