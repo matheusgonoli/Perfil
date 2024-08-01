@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Exemplo-08: Crie um programa que leia uma cor do farol de transito e exiba na pagina uma mensagem usando <h1> correspondente ao significado dessa cor e altere a cor de fundo da pagina para a cor correspondente.
+
+        let cor = prompt('Digite uma cor do farol de transito');
+
+        switch (cor) {
+      case 'vermelho':
+        document.write('<h1>Pare!</h1>');
+        document.bgColor = 'red';
+        break;
+      case 'amarelo':
+        document.write('<h1>Atenção!</h1>');
+        document.bgColor = 'yellow';
+        break;
+      case 'verde':
+        document.write('<h1>Siga!</h1>');
+        document.bgColor = 'green';
+        break;
+      default:
+        document.write('<h1>Cor inválida.');
+    }
+   
+
+    </script>
+    
+</body>
+</html>
